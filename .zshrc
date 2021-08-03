@@ -1,0 +1,1 @@
+/Users/jukrb0x/.config/.zshrc
