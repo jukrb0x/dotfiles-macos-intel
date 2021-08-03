@@ -42,7 +42,7 @@ I stick to this way for some files such as `.zshrc`, even it is unnecessary with
 ## NeoVim
 I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
 
-> LunarVim is not a submodule in the project currently, it should be manually updated, or consider add it as a submodule. The LunarVim project has been updated frequently recently.
+> LunarVim is not a submodule in the project currently, it should be manually updated, or consider adding it as a submodule. The LunarVim project has been updated frequently recently.
 
 My plugins: (see `.config/nvim/lv-config.lua`)
 ```
