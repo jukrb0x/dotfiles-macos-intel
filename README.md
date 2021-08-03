@@ -47,3 +47,10 @@ Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 
 ## Deprecated files
 Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
+
+## Fonts
+For iTerm2:
+- FiraCode-Retina 14 (normal)
+- FiraMonoNerdFontComplete-Regular 14 (non-ascii)
+
+More details at `.config/iterm2.json`
