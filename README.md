@@ -1,8 +1,10 @@
 # dotfiles
-My personal dotfiles, managed with `yadm`.
+My personal dotfiles, managed with [`yadm`](https://yadm.io/)
 
 Principles:
 - Try not to add system-related files into this project, keep pure to application itself.
+
+    > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
 - Exclude any secret file such as private keys and personal information.
 - Exclude Cache file
 - Exclude Git repository
