@@ -22,3 +22,6 @@ I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli
 
 ## Tmux
 Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
+
+## Deprecated files
+Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
