@@ -8,6 +8,8 @@ This directory and its subdirectories is no longer sync with some single git rep
 
 But I will stick to my preference that linking `~/.zshrc` to `~/.config/.zshrc`
 
+It is hard to ensure all personal information is excluded from `.zshrc` such as absolute pathname includes the hostname.
+
 ## Tmux
 [Oh-my-tmux](https://github.com/gpakosz/.tmux) is ~~installed as submodule into this project and~~ kept updates with original repo.
 

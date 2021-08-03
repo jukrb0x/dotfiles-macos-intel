@@ -15,3 +15,8 @@ My old-school way to manage dotfiles, put dotfiles inside `.config/` and then cr
 
 I stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`.
 
+## NeoVim
+I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
+
+## Tmux
+Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
