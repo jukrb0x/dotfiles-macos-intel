@@ -175,6 +175,7 @@ export STARSHIP_CACHE=~/.starship/cache
 unsetopt PROMPT_SP
 export PATH="/usr/local/sbin:$PATH"
 # STARSHIP END
+
 # GPG workaround
 export GPG_TTY=$(tty)
 
