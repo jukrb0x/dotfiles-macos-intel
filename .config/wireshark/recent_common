@@ -1,0 +1,154 @@
+# Common recent settings file for Wireshark 3.4.0.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/zoengjinnbiu/Desktop/SWE1909503-TLS.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Desktop/123.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Desktop/new.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Desktop/okkk.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8f5da3b4d647da1b50631e25cda42e34/Message/MessageTemp/c493f9ec11c566dcef6f9b056173d219/File/SWE1909468-TLS.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8f5da3b4d647da1b50631e25cda42e34/Message/MessageTemp/c493f9ec11c566dcef6f9b056173d219/File/abaabaaba.pcapng
+recent.capture_file: /Users/zoengjinnbiu/Desktop/abaabaaba.pcapng
+recent.capture_file: /Users/zoengjinnbiu/OneDrive - 厦门大学(马来西亚分校)/Lectures/大一下/Computer Network/Final Project/SWE1909503-DHCP.pcapng
+recent.capture_file: /Users/zoengjinnbiu/OneDrive - 厦门大学(马来西亚分校)/Lectures/大一下/Computer Network/Final Project/SWE1909503-TCP.pcapng
+recent.capture_file: /Users/jukrb0x/Desktop/Wireshark_802_11.pcap
+
+######## Recent capture filters (latest last), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: wlan.fc.type_subtype == 5
+recent.display_filter: wlan.fc.type_subtype == 4
+recent.display_filter: wlan.fc.type_subtype == 1
+recent.display_filter: wlan.fc.type_subtype == 0
+recent.display_filter: arp
+recent.display_filter: beacon
+recent.display_filter: tcp
+recent.display_filter: http
+recent.display_filter: dhcp
+recent.display_filter: ip.addr==104.31.71.248 && tls
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 385
+gui.geometry_main_y: 183
+gui.geometry_main_width: 1128
+gui.geometry_main_height: 853
+
+# Main window maximized.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_main_maximized: FALSE
+
+# Leftalign Action Buttons.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_leftalign_actions: FALSE
+
+# Statusbar left pane size.
+# Decimal number.
+gui.geometry_status_pane: 250
+
+# Statusbar middle pane size.
+# Decimal number.
+gui.geometry_status_pane_right: 250
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# WLAN statistics upper pane size.
+# Decimal number.
+gui.geometry_status_wlan_stats_pane: 200
+
+# Warn if running with elevated permissions (e.g. as root).
+# TRUE or FALSE (case-insensitive).
+privs.warn_if_elevated: TRUE
+
+# Warn if Wireshark is unable to capture.
+# TRUE or FALSE (case-insensitive).
+sys.warn_if_no_capture: TRUE
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_DETAILS
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW
+
+# Find packet case sensitive search.
+# TRUE or FALSE (case-insensitive).
+gui.search_case_sensitive: FALSE
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: STRING
+
+# Geometry and maximized state of ColoringRulesDialog window.
+# Decimal integers.
+gui.geom.ColoringRulesDialog.x: 819
+gui.geom.ColoringRulesDialog.y: 171
+gui.geom.ColoringRulesDialog.width: 752
+gui.geom.ColoringRulesDialog.height: 682
+# TRUE or FALSE (case-insensitive).
+gui.geom.ColoringRulesDialog.maximized: FALSE
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 683
+gui.geom.PreferencesDialog.y: 287
+gui.geom.PreferencesDialog.width: 680
+gui.geom.PreferencesDialog.height: 475
+# TRUE or FALSE (case-insensitive).
+gui.geom.PreferencesDialog.maximized: FALSE
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 506
+gui.geom.PacketDialog.y: 94
+gui.geom.PacketDialog.width: 1050
+gui.geom.PacketDialog.height: 800
+# TRUE or FALSE (case-insensitive).
+gui.geom.PacketDialog.maximized: FALSE
+
+# Geometry and maximized state of FilterDialog window.
+# Decimal integers.
+gui.geom.FilterDialog.x: 347
+gui.geom.FilterDialog.y: 190
+gui.geom.FilterDialog.width: 752
+gui.geom.FilterDialog.height: 568
+# TRUE or FALSE (case-insensitive).
+gui.geom.FilterDialog.maximized: FALSE
+
+# Geometry and maximized state of ExpertInfoDialog window.
+# Decimal integers.
+gui.geom.ExpertInfoDialog.x: 511
+gui.geom.ExpertInfoDialog.y: 59
+gui.geom.ExpertInfoDialog.width: 802
+gui.geom.ExpertInfoDialog.height: 908
+# TRUE or FALSE (case-insensitive).
+gui.geom.ExpertInfoDialog.maximized: FALSE
+
+# Geometry and maximized state of WlanStatisticsDialog window.
+# Decimal integers.
+gui.geom.WlanStatisticsDialog.x: 514
+gui.geom.WlanStatisticsDialog.y: 195
+gui.geom.WlanStatisticsDialog.width: 902
+gui.geom.WlanStatisticsDialog.height: 639
+# TRUE or FALSE (case-insensitive).
+gui.geom.WlanStatisticsDialog.maximized: FALSE
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

@@ -1,0 +1,118 @@
+03/02/21 (00:26:47) | ERROR: Data collection thread failed with exception: '>' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.61/libexec/lib/python3.9/site-packages/bpytop.py", line 2908, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.61/libexec/lib/python3.9/site-packages/bpytop.py", line 3793, in _collect
+    if mem > 80: mem = round(mem)
+TypeError: '>' not supported between instances of 'str' and 'int'
+03/02/21 (00:26:47) | WARNING: Exiting with errorcode (1). Runtime 0:22:05 
+
+17/07/21 (07:17:37) | ERROR: Data collection thread failed with exception: [Errno 6] Device not configured
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.63/libexec/lib/python3.9/site-packages/bpytop.py", line 2924, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.63/libexec/lib/python3.9/site-packages/bpytop.py", line 3530, in _collect
+    up_stat = psutil.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.63/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2216, in net_if_stats
+    return _psplatform.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.63/libexec/lib/python3.9/site-packages/psutil/_psosx.py", line 266, in net_if_stats
+    mtu = cext_posix.net_if_mtu(name)
+OSError: [Errno 6] Device not configured
+17/07/21 (07:17:38) | WARNING: Exiting with errorcode (1). Runtime 1 day, 8:16:08 
+
+19/07/21 (13:37:55) | ERROR: Exception when sending signal 9 to pid 118
+19/07/21 (13:37:55) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.63/libexec/lib/python3.9/site-packages/bpytop.py", line 5432, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+25/07/21 (23:03:23) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+25/07/21 (23:10:57) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+27/07/21 (03:19:26) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+27/07/21 (03:19:45) | ERROR: Data collection thread failed with exception: 'pid'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 2939, in _runner
+    collector._draw()
+  File "/usr/local/bin/bpytop", line 3971, in _draw
+    ProcBox._draw_fg()
+  File "/usr/local/bin/bpytop", line 2618, in _draw_fg
+    f'{Mv.to(dy-1, x+1)}{THEME.proc_box(Symbol.title_left)}{Fx.b}{THEME.title(str(proc.details["pid"]))}{Fx.ub}{THEME.proc_box(Symbol.title_right)}'
+KeyError: 'pid'
+27/07/21 (03:19:45) | WARNING: Exiting with errorcode (1). Runtime 0:00:19 
+
+27/07/21 (03:19:48) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+30/07/21 (22:16:20) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+30/07/21 (22:16:32) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+30/07/21 (22:20:07) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+30/07/21 (23:30:29) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+03/08/21 (20:25:56) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+04/08/21 (01:58:36) | ERROR: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 1337, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jukrb0x/.config/bpytop/themes'
+04/08/21 (01:58:42) | ERROR: The read operation timed out
+Traceback (most recent call last):
+  File "/usr/local/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
