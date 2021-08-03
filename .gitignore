@@ -1,0 +1,7 @@
+# This file is configured for yadm
+
+# os
+.DS_Store
+
+# node
+node_modules/
