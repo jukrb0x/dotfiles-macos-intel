@@ -1,0 +1,19 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = jukrb0x
+	email = 15688641+jukrb0x@users.noreply.github.com
+	signingKey = 9E603D2A7C8FBDD4
+[https]
+	proxy = socks5://127.0.0.1:8235
+[http "https://github.com"]
+	proxy = socks5://127.0.0.1:8235
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[tag]
+	forceSignAnnotated = true
