@@ -10,6 +10,28 @@ Principles:
 - Exclude Git repository
 - Git submodule is considered, though I do not use any submodule currently.
 
+```
+❯ neofetch
+                    'c.          jukrb0x@Workstation.local
+                 ,xNMM.          -----------------------------
+               .OMMMMo           OS: macOS 11.4 20F71 x86_64
+               OMMM0,            Host: MacBookPro14,3
+     .;loddo:' loolloddol;.      Kernel: 20.5.0
+   cKMMMMMMMMMMNWMMMMMMMMMM0:    Uptime: X day, X hours, X mins
+ .KMMMMMMMMMMMMMMMMMMMMMMMWd.    Packages: 175 (brew)
+ XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: zsh 5.8
+;MMMMMMMMMMMMMMMMMMMMMMMM:       Resolution: X
+:MMMMMMMMMMMMMMMMMMMMMMMM:       DE: Aqua
+.MMMMMMMMMMMMMMMMMMMMMMMMX.      WM: Quartz Compositor
+ kMMMMMMMMMMMMMMMMMMMMMMMMWd.    WM Theme: Blue (Dark)
+ .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   Terminal: tmux
+  .XMMMMMMMMMMMMMMMMMMMMMMMMK.   CPU: Intel i7-7700HQ (8) @ 2.80GHz
+    kMMMMMMMMMMMMMMMMMMMMMMd     GPU: Intel HD Graphics 630, Radeon Pro 555
+     ;KMMMMMMMWXXWMMMMMMMk.      Memory: XMiB / 16384MiB
+       .cooc,.    .,coo:.
+
+```
+
 ## .config
 Some application config files are situated in this directory.
 
