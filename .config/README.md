@@ -29,3 +29,6 @@ It should be updated manually.
 Fonts that I usually use for terminal and IDE. (Nerd fonts)
 
 Look up `iterm2.json` for more information.
+
+## Yarn
+The global settings of yarn, usually not working for a specific project (separate project environment).
