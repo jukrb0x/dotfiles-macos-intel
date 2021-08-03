@@ -42,6 +42,22 @@ I stick to this way for some files such as `.zshrc`, even it is unnecessary with
 ## NeoVim
 I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
 
+My plugins: (in `.config/nvim/lv-config.lua`)
+```
+-- Additional Plugins
+O.user_plugins = {
+       {'iamcco/markdown-preview.nvim'}, 
+       {'Iron-E/nvim-libmodal'} ,
+       {'Iron-E/nvim-typora'},
+       {'plasticboy/vim-markdown'},
+       {'wakatime/vim-wakatime'}
+--     {"folke/tokyonight.nvim"}, {
+--         "ray-x/lsp_signature.nvim",
+--         config = function() require"lsp_signature".on_attach() end,
+--         event = "InsertEnter"
+--     }
+}
+```
 ## Tmux
 Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 
