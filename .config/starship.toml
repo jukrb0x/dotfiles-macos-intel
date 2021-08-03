@@ -1,0 +1,15 @@
+# Don't print a new line at the start of the prompt
+# add_newline = false
+
+
+[nodejs]
+format = "[✨ $version ](bold green)"
+
+[ruby]
+disabled = true
+
+[character]
+# symbol = "➜"
+# error_symbol = "✗"
+# FIXME: use_symbol_for_status is not supported!!!
+# use_symbol_for_status = true
