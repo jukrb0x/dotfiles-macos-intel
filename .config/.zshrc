@@ -193,3 +193,8 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # pipev virtualenv PATH
 export PATH="/Users/jukrb0x/.local/bin:$PATH"
+
+# fix slow git tab completion
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
