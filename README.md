@@ -6,7 +6,7 @@ Principles:
 
     > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
 - Exclude any secret file such as private keys and personal information.
-- Exclude Cache file
+- Exclude cache file
 - Exclude Git repository
 - Git submodule is considered, though I do not use any submodule currently.
 
@@ -48,14 +48,19 @@ For VSCode:
 - Menlo, Monaco, 'Courier New', monospace (Editor)
 - MesloLGL Nerd Font (Terminal)
 
-## .config
-Some application config files are situated in this directory.
+## Terminal workflow
+- iTerm2
+- Zsh (oh-my-zsh)
+- StarShip prompt
+- Tmux
+- Nvim (LunarVim)
+- Pyenv (manage python versions on machine)
+- Pipenv (manage python environment for projects)
 
-My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
+### Tmux
+Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 
-I (currently) stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`.
-
-## NeoVim
+### NeoVim
 I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
 
 > LunarVim is not a submodule in the project currently, it should be manually updated, or consider adding it as a submodule. The LunarVim project has been updated frequently recently.
@@ -76,8 +81,13 @@ O.user_plugins = {
 --     }
 }
 ```
-## Tmux
-Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
+
+## .config
+Some application config files are situated in this directory.
+
+My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
+
+I (currently) stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`.
 
 ## Deprecated files
 Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
