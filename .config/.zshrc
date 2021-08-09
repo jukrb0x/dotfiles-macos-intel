@@ -120,16 +120,19 @@ source $ZSH/oh-my-zsh.sh
 # export http_proxy=http://127.0.0.1:7878
 # export https_proxy=$http_proxy
 
+# >>> pyenv init >>>
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+# <<< pyenv init <<<
+
 # >>> starship init >>>
 # starship init
 eval "$(starship init zsh)"
 # logging - https://starship.rs/config/#logging
 export STARSHIP_CACHE=~/.starship/cache
 # <<< starship init <<<
-
-# workround for fix Hyper first line precent sign
-# unsetopt PROMPT_SP
-# export PATH="/usr/local/sbin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -146,11 +149,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# pyenv init
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+# workaround for fix Hyper first line precent sign
+# unsetopt PROMPT_SP
+# export PATH="/usr/local/sbin:$PATH"
 
 # proxy on-off alias
 alias proxy='export all_proxy=socks5://127.0.0.1:8235'
@@ -182,13 +183,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Homebrew extra settings
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
 
-# starship placeholder
 # GPG workaround
 export GPG_TTY=$(tty)
-
-
-# byobu (deprecated)
-export BYOBU_PREFIX=/usr/local
 
 # mysql@5.7
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
