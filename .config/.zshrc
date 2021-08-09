@@ -134,6 +134,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 # pyenv init
 eval "$(pyenv init -)"
 
