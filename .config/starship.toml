@@ -13,3 +13,6 @@ disabled = true
 # error_symbol = "✗"
 # FIXME: use_symbol_for_status is not supported!!!
 # use_symbol_for_status = true
+
+[conda]
+ignore_base = false
