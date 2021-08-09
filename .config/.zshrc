@@ -120,6 +120,17 @@ source $ZSH/oh-my-zsh.sh
 # export http_proxy=http://127.0.0.1:7878
 # export https_proxy=$http_proxy
 
+# >>> starship init >>>
+# starship init
+eval "$(starship init zsh)"
+# logging - https://starship.rs/config/#logging
+export STARSHIP_CACHE=~/.starship/cache
+# <<< starship init <<<
+
+# workround for fix Hyper first line precent sign
+# unsetopt PROMPT_SP
+# export PATH="/usr/local/sbin:$PATH"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/jukrb0x/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -136,6 +147,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # pyenv init
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # proxy on-off alias
@@ -162,24 +176,13 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools; PATH=$PATH:$ANDROID_SDK_ROOT/platform
 # Gradle
 export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
 
-# iTerm2 shell integration
+# iTerm2 shell integration for zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Homebrew extra settings
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
 
-# STARSHIP
-# starship init
-eval "$(starship init zsh)"
-
-# logging - https://starship.rs/config/#logging
-export STARSHIP_CACHE=~/.starship/cache
-
-# workround for fix Hyper first line precent sign
-unsetopt PROMPT_SP
-export PATH="/usr/local/sbin:$PATH"
-# STARSHIP END
-
+# starship placeholder
 # GPG workaround
 export GPG_TTY=$(tty)
 
