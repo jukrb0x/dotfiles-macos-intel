@@ -121,6 +121,8 @@ source $ZSH/oh-my-zsh.sh
 # export https_proxy=$http_proxy
 
 # >>> pyenv init >>>
+# pyenv should be initialized in front of most applications
+# to provide python environment shims
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
