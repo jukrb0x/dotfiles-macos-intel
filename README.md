@@ -48,7 +48,7 @@ For VSCode:
 - Menlo, Monaco, 'Courier New', monospace (Editor)
 - MesloLGL Nerd Font (Terminal)
 
-## Terminal workflow
+## Terminal Arsenal
 - iTerm2
 - Zsh (oh-my-zsh)
 - StarShip prompt
