@@ -2,6 +2,7 @@ ssl_verify: true
 channels:
   - defaults
 show_channel_urls: true
+auto_activate_base: false
 default_channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
