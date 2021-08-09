@@ -92,4 +92,6 @@ I (currently) stick to this way for some files such as `.zshrc`, even it is unne
 ## Deprecated files
 Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
 
+Files will be removed soon:
+- hyper related files
 
