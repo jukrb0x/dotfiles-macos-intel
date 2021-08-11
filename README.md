@@ -11,6 +11,8 @@ Principles:
 - Exclude unnecessary files (such as cache)
 - Exclude Git repository
 - Git submodule is considered, though I do not use any submodule currently
+
+    > Use submodule soon!
 - Softlink-free, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 ```
@@ -86,7 +88,7 @@ O.user_plugins = {
 ```
 
 ## .config
-Some application config files are situated in this directory.
+Some application configs are situated in this directory.
 
 My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
 
@@ -99,7 +101,8 @@ Files will be removed soon:
 - hyper related files
 
 ## TODOs
-- [ ] Auto script for installing softwares through Homebrew
+- [ ] **Update LunarVim && Use Git(yadm) submodule**
 - [ ] Upload fonts
+- [ ] Auto script for installing softwares through Homebrew
 - [ ] Auto script for Installing fonts
 - [ ] Refine document, for each utility
