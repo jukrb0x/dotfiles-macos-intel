@@ -1,12 +1,14 @@
 # dotfiles
-My personal dotfiles, managed with [`yadm`](https://yadm.io/)
+My personal dotfiles, powered by [`yadm`](https://yadm.io/)
+
+I would try to document all dotfiles and magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). Dotfiles are very personal things, make sure you read the document before actually using them.
 
 Principles:
 - Try not to add system-related files into this project, keep pure to application itself.
 
     > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
 - Exclude any secret file such as private keys and personal information.
-- Exclude cache file
+- Exclude unnecessary files (such as cache)
 - Exclude Git repository
 - Git submodule is considered, though I do not use any submodule currently
 - Softlink-free, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
@@ -96,3 +98,8 @@ Some applications that I do not use for a while, the dotfiles of them are kept a
 Files will be removed soon:
 - hyper related files
 
+## TODOs
+- [ ] Auto script for installing softwares through Homebrew
+- [ ] Upload fonts
+- [ ] Auto script for Installing fonts
+- [ ] Refine document
