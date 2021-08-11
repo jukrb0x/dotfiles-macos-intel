@@ -8,7 +8,8 @@ Principles:
 - Exclude any secret file such as private keys and personal information.
 - Exclude cache file
 - Exclude Git repository
-- Git submodule is considered, though I do not use any submodule currently.
+- Git submodule is considered, though I do not use any submodule currently
+- Softlink-free, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 ```
 ❯ neofetch
@@ -87,7 +88,7 @@ Some application config files are situated in this directory.
 
 My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
 
-I (currently) stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`.
+I (*currently*) stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`.
 
 ## Deprecated files
 Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
