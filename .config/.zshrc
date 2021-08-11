@@ -1,14 +1,22 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Homebrew shell completions
+# >>> Homebrew shell completions >>>
+# !! Homebrew shell completions must be done before call oh-my-zsh
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
   autoload -Uz compinit
   compinit
 fi
-# Homebrew shell completions done before call oh-my-zsh
+# <<< Homebrew shell completions end <<< 
+
+# >>> homebrew/command-not-found handler init >>>
+HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+source "$HB_CNF_HANDLER";
+fi
+# <<< homebrew/command-not-found handler init <<<
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jukrb0x/.oh-my-zsh"
@@ -119,10 +127,25 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 # export http_proxy=http://127.0.0.1:7878
 # export https_proxy=$http_proxy
+# all proxy on-off alias
+
+# Aliases #
+
+alias proxy='export all_proxy=socks5://127.0.0.1:8235'
+alias unproxy='unset all_proxy'
+alias nb='jupyter-notebook'
+alias caferacer='/Users/jukrb0x/caferacer_ip_refresh.sh'
+alias ra='ranger'
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
+alias mongodb='brew services start mongodb-community@4.4'
+alias mongodb-stop='brew services stop mongodb-community@4.4'
+
+
+# Applications #
 
 # >>> pyenv init >>>
-# pyenv should be initialized in front of most applications
-# to provide python environment shims
+# !! pyenv should be initialized in front of most applications
+#    to provide python environment shims
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -130,6 +153,7 @@ eval "$(pyenv init -)"
 # <<< pyenv init <<<
 
 # >>> starship init >>>
+# !! starship prompt will overpower oh-my-zsh theme
 # starship init
 eval "$(starship init zsh)"
 # logging - https://starship.rs/config/#logging
@@ -155,17 +179,8 @@ unset __conda_setup
 # unsetopt PROMPT_SP
 # export PATH="/usr/local/sbin:$PATH"
 
-# proxy on-off alias
-alias proxy='export all_proxy=socks5://127.0.0.1:8235'
-alias unproxy='unset all_proxy'
-
-alias nb='jupyter-notebook'
-alias caferacer='/Users/jukrb0x/caferacer_ip_refresh.sh'
-alias ra='ranger'
-alias code="open -a /Applications/Visual\ Studio\ Code.app"
-# alias privoxy="'/Users/jukrb0x/Library/Application Support/ShadowsocksX-NG-R8/privoxy-3.0.28.static/privoxy' '/Users/jukrb0x/Library/Application Support/ShadowsocksX-NG-R8/privoxy.config'"
-alias mongodb='brew services start mongodb-community@4.4'
-alias mongodb-stop='brew services stop mongodb-community@4.4'
+# Homebrew mirror
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
@@ -182,9 +197,6 @@ export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
 # iTerm2 shell integration for zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Homebrew extra settings
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
-
 # GPG workaround
 export GPG_TTY=$(tty)
 
@@ -198,3 +210,8 @@ export PATH="/Users/jukrb0x/.local/bin:$PATH"
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
+
+# fix: python locale encoding 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH="/usr/local/sbin:$PATH"
