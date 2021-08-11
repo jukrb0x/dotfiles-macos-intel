@@ -102,4 +102,4 @@ Files will be removed soon:
 - [ ] Auto script for installing softwares through Homebrew
 - [ ] Upload fonts
 - [ ] Auto script for Installing fonts
-- [ ] Refine document
+- [ ] Refine document, for each utility
