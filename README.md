@@ -1,7 +1,7 @@
 # dotfiles
 My personal dotfiles, powered by [`yadm`](https://yadm.io/)
 
-I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). Dotfiles are very personal things, make sure you read the document before actually using them.
+Dotfiles are very personal things, make sure you read the document before actually using them. I would try to document all magics that I've been using so that you can create your own dotfiles without my configuration. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
 
 Principles:
 - Try not to add system-related files into this project, keep pure to application itself.
@@ -11,6 +11,8 @@ Principles:
 - Exclude unnecessary files (such as cache)
 - Exclude Git repository
 - Git submodule is considered, though I do not use any submodule currently
+
+    > Use submodule soon!
 - Softlink-free, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 ```
@@ -86,7 +88,7 @@ O.user_plugins = {
 ```
 
 ## .config
-Some application config files are situated in this directory.
+Some application configs are situated in this directory.
 
 My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
 
@@ -99,7 +101,8 @@ Files will be removed soon:
 - hyper related files
 
 ## TODOs
-- [ ] Auto script for installing softwares through Homebrew
+- [ ] **Update LunarVim && Use Git(yadm) submodule**
 - [ ] Upload fonts
+- [ ] Auto script for installing softwares through Homebrew
 - [ ] Auto script for Installing fonts
 - [ ] Refine document, for each utility
