@@ -68,6 +68,8 @@ Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 ### NeoVim
 I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
 
+Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
+
 > LunarVim is not a submodule in the project currently, it should be manually updated, or consider adding it as a submodule. The LunarVim project has been updated frequently recently.
 
 My plugins: (see `.config/nvim/lv-config.lua`)
