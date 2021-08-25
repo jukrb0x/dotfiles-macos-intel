@@ -8,3 +8,11 @@ node_modules/
 
 # log
 .config/bpytop/error.log
+yarn-error.log
+
+# lockfiles
+yarn.lock
+package-lock.json
+
+# configstore
+.config/configstore/
