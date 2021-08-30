@@ -65,6 +65,9 @@ For VSCode:
 ### Tmux
 Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 
+Plugins:
+- [xamut/tmux-network-bandwidth](https://github.com/xamut/tmux-network-bandwidth)
+
 ### NeoVim
 I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
 
