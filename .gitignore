@@ -16,3 +16,6 @@ package-lock.json
 
 # configstore
 .config/configstore/
+
+# github cli
+.config/gh/
