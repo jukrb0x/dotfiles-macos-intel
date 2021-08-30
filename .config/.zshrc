@@ -129,7 +129,7 @@ source $ZSH/oh-my-zsh.sh
 # export https_proxy=$http_proxy
 # all proxy on-off alias
 
-# Aliases #
+# ---- Aliases ----
 
 alias proxy='export all_proxy=socks5://127.0.0.1:8235'
 alias unproxy='unset all_proxy'
@@ -141,7 +141,7 @@ alias mongodb='brew services start mongodb-community@4.4'
 alias mongodb-stop='brew services stop mongodb-community@4.4'
 
 
-# Applications #
+# ---- Applications ----
 
 # >>> pyenv init >>>
 # !! pyenv should be initialized in front of most applications
@@ -180,7 +180,8 @@ unset __conda_setup
 # export PATH="/usr/local/sbin:$PATH"
 
 # Homebrew mirror
-export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+# Bintary end of services
+export HOMEBREW_BOTTLE_DOMAIN=""
 
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
