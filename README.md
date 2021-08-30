@@ -1,7 +1,7 @@
 # dotfiles (WIP)
 My personal dotfiles, powered by [`yadm`](https://yadm.io/)
 
-Dotfiles are very personal things, make sure you read the document before actually using them. I would try to document all magics that I've been using so that you can create your own dotfiles without my configuration. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
+Dotfiles are very personal things, make sure you read the document before actually using them. This repository aims to assist you with creating your own Dotfiles so that I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
 
 Principles:
 - Try not to add system-related files into this project, keep pure to application itself.
