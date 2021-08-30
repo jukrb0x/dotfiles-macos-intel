@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles (WIP)
 My personal dotfiles, powered by [`yadm`](https://yadm.io/)
 
 Dotfiles are very personal things, make sure you read the document before actually using them. I would try to document all magics that I've been using so that you can create your own dotfiles without my configuration. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
