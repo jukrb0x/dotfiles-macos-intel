@@ -75,7 +75,7 @@ Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
 
 > LunarVim is not a submodule in the project currently, it should be manually updated, or consider adding it as a submodule. The LunarVim project has been updated frequently recently.
 
-My plugins: (see `.config/nvim/lv-config.lua`)
+Plugins: (see `.config/nvim/lv-config.lua`)
 ```
 -- Additional Plugins
 O.user_plugins = {
