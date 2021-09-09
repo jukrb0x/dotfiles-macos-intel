@@ -2,6 +2,7 @@
   "dependencies": {
     "@quasar/cli": "^1.2.1",
     "create-nuxt-app": "^3.4.0",
+    "create-vite": "^2.6.2",
     "gulp-cli": "^2.3.0",
     "quasar": "^1.14.7",
     "tbify": "^1.5.0",
