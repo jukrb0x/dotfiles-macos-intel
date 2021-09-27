@@ -134,6 +134,7 @@ fi
 
 # ---- Aliases ----
 
+alias nvim=lvim
 alias proxy='export all_proxy=socks5://127.0.0.1:8235'
 alias unproxy='unset all_proxy'
 alias nb='jupyter-notebook'
