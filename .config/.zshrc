@@ -111,11 +111,11 @@ source $ZSH/oh-my-zsh.sh
 #  -- Remote defaults to vim
 #  -- Local defaults to lvim
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
   export VISUAL='vim'
+  export EDITOR='vim'
 else
-  export EDITOR='nvim'
   export VISUAL='nvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -134,7 +134,6 @@ fi
 # all proxy on-off alias
 
 # ---- Aliases ----
-
 alias nvim=lvim
 alias proxy='export all_proxy=socks5://127.0.0.1:8235'
 alias unproxy='unset all_proxy'

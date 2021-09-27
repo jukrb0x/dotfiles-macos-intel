@@ -17,3 +17,5 @@
 	program = gpg
 [tag]
 	forceSignAnnotated = true
+[core]
+	editor = lvim
