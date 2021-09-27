@@ -108,11 +108,14 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+#  -- Remote defaults to vim
+#  -- Local defaults to lvim
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='lvim'
+  export VISUAL='lvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -218,5 +221,5 @@ export LANG=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
 
 # default editor (for ranger)
-export VISUAL=nvim
-export EDITOR=nvim
+# export VISUAL=nvim
+# export EDITOR=nvim
