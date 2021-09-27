@@ -112,9 +112,10 @@ source $ZSH/oh-my-zsh.sh
 #  -- Local defaults to lvim
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
+  export VISUAL='vim'
 else
-  export EDITOR='lvim'
-  export VISUAL='lvim'
+  export EDITOR='nvim'
+  export VISUAL='nvim'
 fi
 
 # Compilation flags
@@ -220,7 +221,3 @@ __git_files () {
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
-
-# default editor (for ranger)
-# export VISUAL=nvim
-# export EDITOR=nvim
