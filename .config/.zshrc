@@ -114,8 +114,8 @@ if [[ -n $SSH_CONNECTION ]]; then
   export VISUAL='vim'
   export EDITOR='vim'
 else
-  export VISUAL='nvim'
-  export EDITOR='nvim'
+  export VISUAL='lvim'
+  export EDITOR='lvim'
 fi
 
 # Compilation flags
@@ -188,7 +188,10 @@ unset __conda_setup
 export HOMEBREW_BOTTLE_DOMAIN=""
 
 # Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
+# --> jdk 1.8 (system)
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
+# --> jdk11 (corretto, downloaded with intellij)
+export JAVA_HOME=/Users/jukrb0x/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home
 
 # Android Debug Bridge
 export ANDROID_HOME=/Users/jukrb0x/Library/Android/sdk

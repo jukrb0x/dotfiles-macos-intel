@@ -85,6 +85,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     return require("lspconfig/util").root_pattern("Makefile", ".git")(fname) or require("lspconfig/util").path.dirname(fname)
 --   end
 -- end
+-- lvim.lsp.override = { "java" }
 
 -- set a formatter if you want to override the default lsp one (if it exists)
 -- lvim.lang.python.formatters = {
@@ -101,7 +102,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-    { "mfussenegger/nvim-jdtls", ft = "java" },
+    -- { "mfussenegger/nvim-jdtls", ft = "java" },
     {'iamcco/markdown-preview.nvim'},
     {'Iron-E/nvim-libmodal'},
     {'Iron-E/nvim-typora'},
@@ -114,8 +115,7 @@ lvim.plugins = {
     },
 }
 
-lvim.lsp.override = { "java" }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
-lvim.autocommands.custom_groups = {
-  { "BufWinEnter", "*", "setlocal ts=4 sw=4" },
-}
+-- lvim.autocommands.custom_groups = {
+--   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+-- }
