@@ -192,6 +192,8 @@ export HOMEBREW_BOTTLE_DOMAIN=""
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
 # --> jdk11 (corretto, downloaded with intellij)
 export JAVA_HOME=/Users/jukrb0x/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home
+# Apache Tomcat
+export CATALINA_HOME=/usr/local/Cellar/tomcat/10.0.11/libexec
 
 # Android Debug Bridge
 export ANDROID_HOME=/Users/jukrb0x/Library/Android/sdk
