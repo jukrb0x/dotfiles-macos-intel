@@ -11,8 +11,10 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "zephyr"
 lvim.transparent_window = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -47,7 +49,11 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 -- }
-
+lvim.builtin.which_key.mappings["H"] = {
+    name = "+Hop",
+    w = { "<cmd>HopWord<cr>", "Word" },
+    l = { "<cmd>HopLine<cr>", "Line" },
+}
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = true
@@ -58,7 +64,12 @@ lvim.builtin.nvimtree.show_icons.git = 0
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = "maintained"
 lvim.builtin.treesitter.ignore_install = { "haskell" }
+-- tresitter is buggy for python indentation
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.treesitter.indent = { enable = true, disable = { "yaml", "python" } }
+
+-- Autopairs
+lvim.builtin.autopairs.active = true
 
 -- generic LSP settings
 -- you can set a custom on_attach function that will be used for all the language servers
@@ -98,24 +109,43 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     exe = "flake8",
 --   }
 -- }
+lvim.lsp.override = { "java" }
 
 -- Additional Plugins
 lvim.plugins = {
+    -- Themes
+    { "folke/tokyonight.nvim" },
+    { "Pocco81/Catppuccino.nvim" },
+    { "NTBBloodbath/doom-one.nvim" },
+    { "abzcoding/zephyr-nvim" },
+    -- Plugins
     { "mfussenegger/nvim-jdtls", ft = "java" },
-    {'iamcco/markdown-preview.nvim'},
-    {'Iron-E/nvim-libmodal'},
-    {'Iron-E/nvim-typora'},
-    {'plasticboy/vim-markdown'},
-    {'wakatime/vim-wakatime'},
-    {"folke/tokyonight.nvim"},
+    { "iamcco/markdown-preview.nvim" },
+    { "Iron-E/nvim-libmodal" },
+    { "Iron-E/nvim-typora" },
+    { "plasticboy/vim-markdown" },
+    { "wakatime/vim-wakatime" },
     {
       "folke/trouble.nvim",
       cmd = "TroubleToggle",
     },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        setup = function ()
+            require("user.indent_blankline").setup()
+        end,
+        event = "BufRead"
+    },
+    { "norcalli/nvim-colorizer.lua" },
+    { "phaazon/hop.nvim" }
 }
-
-lvim.lsp.override = { "java" }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 lvim.autocommands.custom_groups = {
   { "BufWinEnter", "*", "setlocal ts=4 sw=4" },
+  { "BufWinEnter", "*", "ColorizerAttachToBuffer" },
+  {
+      "Filetype",
+      "python",
+      "nnoremap <leader>r <cmd>lua require('core.terminal')._exec_toggle('python " .. vim.fn.expand "%" .. ";read')<CR>"
+  },
 }
