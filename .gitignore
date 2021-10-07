@@ -26,6 +26,6 @@ package-lock.json
 .config/NuGet/
 .config/clash/
 .config/stetic/
-.config/wireshark
+.config/wireshark/
 
 
