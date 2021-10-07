@@ -19,3 +19,12 @@ package-lock.json
 
 # github cli
 .config/gh/
+
+# no need to submit
+.config/.mono/
+.config/Microsoft\VisualStudio Services/
+.config/NuGet/
+.config/clash/
+
+
+
