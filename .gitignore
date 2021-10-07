@@ -27,5 +27,6 @@ package-lock.json
 .config/clash/
 .config/stetic/
 .config/wireshark/
+.shuttle.json
 
 
