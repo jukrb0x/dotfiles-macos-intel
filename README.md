@@ -92,7 +92,7 @@ O.user_plugins = {
 }
 ```
 
-## .config
+## `.config` 
 Some application configs are situated in this directory.
 
 My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
