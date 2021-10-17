@@ -141,8 +141,10 @@ alias nb='jupyter-notebook'
 alias caferacer='/Users/jukrb0x/caferacer_ip_refresh.sh'
 alias ra='ranger'
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
-alias mongodb='brew services start mongodb-community@4.4'
+alias mongodb-start='brew services start mongodb-community@4.4'
 alias mongodb-stop='brew services stop mongodb-community@4.4'
+alias l='colorls -lA --sd' # omz default l=ls -alh
+alias ll='colorls -l --sd' # omz default ll=ls -lh
 
 
 # ---- Applications ----
