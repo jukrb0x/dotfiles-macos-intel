@@ -19,3 +19,5 @@
 	forceSignAnnotated = true
 [core]
 	editor = lvim
+[init]
+	defaultBranch = main
