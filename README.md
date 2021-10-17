@@ -58,7 +58,7 @@ For VSCode:
 - Zsh (oh-my-zsh)
 - StarShip prompt
 - Tmux
-- Nvim (LunarVim)
+- NeoVim (LunarVim)
 - Pyenv (manage python versions on machine)
 - Pipenv (manage python environment for projects)
 

@@ -143,9 +143,11 @@ alias ra='ranger'
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
 alias mongodb-start='brew services start mongodb-community@4.4'
 alias mongodb-stop='brew services stop mongodb-community@4.4'
+# >>> alias to athityakumar/colorls >>>
 alias l='colorls -lA --sd' # omz default l=ls -alh
 alias ll='colorls -l --sd' # omz default ll=ls -lh
-
+alias ls='colorls'
+# <<< alias to athityakumar/colorls <<<
 
 # ---- Applications ----
 
@@ -160,7 +162,6 @@ eval "$(pyenv init -)"
 
 # >>> starship init >>>
 # !! starship prompt will overpower oh-my-zsh theme
-# starship init
 eval "$(starship init zsh)"
 # logging - https://starship.rs/config/#logging
 export STARSHIP_CACHE=~/.starship/cache
@@ -168,17 +169,17 @@ export STARSHIP_CACHE=~/.starship/cache
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jukrb0x/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jukrb0x/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/Users/jukrb0x/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/jukrb0x/opt/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 # <<< conda initialize <<<
 
 # workaround for fix Hyper first line precent sign
