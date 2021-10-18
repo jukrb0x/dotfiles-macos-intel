@@ -96,6 +96,7 @@ plugins=(
   git 
   zsh-autosuggestions 
   zsh-syntax-highlighting
+  zsh-z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -215,9 +216,6 @@ export GPG_TTY=$(tty)
 
 # mysql@5.7
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-
-# pipev virtualenv PATH
-export PATH="/Users/jukrb0x/.local/bin:$PATH"
 
 # fix slow git tab completion
 __git_files () { 
