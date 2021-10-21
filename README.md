@@ -106,8 +106,6 @@ Files will be removed soon:
 - hyper related files
 
 ## TODOs
-- [ ] **Update LunarVim && Use Git(yadm) submodule**
-- [ ] Upload fonts
 - [ ] Auto script for installing softwares through Homebrew
 - [ ] Auto script for Installing fonts
 - [ ] Refine document, for each utility
