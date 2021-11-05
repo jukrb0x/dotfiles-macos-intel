@@ -113,6 +113,8 @@ lvim.lsp.override = { "java" }
 
 -- Additional Plugins
 lvim.plugins = {
+    -- GitHub
+    { "github/copilot.vim"},
     -- Themes
     { "folke/tokyonight.nvim" },
     { "Pocco81/Catppuccino.nvim" },
@@ -137,12 +139,16 @@ lvim.plugins = {
         event = "BufRead"
     },
     { "norcalli/nvim-colorizer.lua" },
-    { "phaazon/hop.nvim" }
+    { "phaazon/hop.nvim" },
+    { "ybian/smartim" }
 }
+
+
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 lvim.autocommands.custom_groups = {
   { "BufWinEnter", "*", "setlocal ts=4 sw=4" },
   { "BufWinEnter", "*", "ColorizerAttachToBuffer" },
+  { "BufWinEnter", "*", ":slient !/usr/local/bin/im-select com.apple.keylayout.US" },
   {
       "Filetype",
       "python",
