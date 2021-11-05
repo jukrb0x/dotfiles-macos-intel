@@ -30,3 +30,6 @@ package-lock.json
 .shuttle.json
 .config/Unreal\ Engine/
 
+# github copilot
+.config/github-copilot/
+
