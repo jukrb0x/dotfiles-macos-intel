@@ -44,7 +44,7 @@ For iTerm2:
 - FiraCode Medium 17
 - FiraMono Nerd Font Regular 17 (non-ascii)
 
-More details at `.config/iterm2.json`
+More details at `.config/iterm2Profile.json`
 
 For JetBrains IDEs:
 - JetBrains Mono ([Website](https://www.jetbrains.com/lp/mono/))
