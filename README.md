@@ -41,17 +41,17 @@ Principles:
 I am comfortable with these fonts.
 
 For iTerm2:
-- FiraCode-Retina 14 (normal)
-- FiraMonoNerdFontComplete-Regular 14 (non-ascii)
+- FiraCode Medium 17
+- FiraMono Nerd Font Regular 17 (non-ascii)
 
 More details at `.config/iterm2.json`
 
 For JetBrains IDEs:
-- JetBrains Mono (macOS default)
+- JetBrains Mono ([Website](https://www.jetbrains.com/lp/mono/))
 
 For VSCode:
-- Menlo, Monaco, 'Courier New', monospace (Editor)
-- MesloLGL Nerd Font (Terminal)
+- `"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace"`
+- `"terminal.integrated.fontFamily": "JetBrains Mono"`
 
 ## Terminal Arsenal
 - iTerm2
@@ -74,7 +74,8 @@ I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli
 
 <details>
 <summary>Plugins: (see `.config/lvim/lv-config.lua`)</summary>
-```
+
+```lua
 -- Additional Plugins
 lvim.plugins = {
     -- GitHub
@@ -107,6 +108,7 @@ lvim.plugins = {
     { "ybian/smartim" }
 }
 ```
+
 </details>
 
 ## `.config` 
