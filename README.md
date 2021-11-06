@@ -1,7 +1,7 @@
 # dotfiles (WIP)
-My personal dotfiles, powered by [`yadm`](https://yadm.io/)
+Workspace setup, My personal dotfiles, powered by [`yadm`](https://yadm.io/)
 
-Dotfiles are very personal things, make sure you read the document before actually using them. Personally I use this repository to sync my dotfiles, however this repository aims to assist you with creating your own Dotfiles so that I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
+Dotfiles are very personal things, make sure you read the document before actually using them. Personally I use this repository to sync my dotfiles, however this repository aims to assist you with creating your own Dotfiles. I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
 
 Principles:
 - Try not to add system-related files into this project, keep pure to application itself.
@@ -69,28 +69,45 @@ Plugins:
 - [xamut/tmux-network-bandwidth](https://github.com/xamut/tmux-network-bandwidth)
 
 ### NeoVim
-I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.
+I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.  Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
 
-Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
 
-> LunarVim is not a submodule in the project currently, it should be manually updated, or consider adding it as a submodule. The LunarVim project has been updated frequently recently.
-
-Plugins: (see `.config/nvim/lv-config.lua`)
+<details>
+<summary>Plugins: (see `.config/lvim/lv-config.lua`)</summary>
 ```
 -- Additional Plugins
-O.user_plugins = {
-       {'iamcco/markdown-preview.nvim'}, 
-       {'Iron-E/nvim-libmodal'} ,
-       {'Iron-E/nvim-typora'},
-       {'plasticboy/vim-markdown'},
-       {'wakatime/vim-wakatime'}
---     {"folke/tokyonight.nvim"}, {
---         "ray-x/lsp_signature.nvim",
---         config = function() require"lsp_signature".on_attach() end,
---         event = "InsertEnter"
---     }
+lvim.plugins = {
+    -- GitHub
+    { "github/copilot.vim"},
+    -- Themes
+    { "folke/tokyonight.nvim" },
+    { "Pocco81/Catppuccino.nvim" },
+    { "NTBBloodbath/doom-one.nvim" },
+    { "abzcoding/zephyr-nvim" },
+    -- Plugins
+    { "mfussenegger/nvim-jdtls", ft = "java" },
+    { "iamcco/markdown-preview.nvim" },
+    { "Iron-E/nvim-libmodal" },
+    { "Iron-E/nvim-typora" },
+    { "plasticboy/vim-markdown" },
+    { "wakatime/vim-wakatime" },
+    {
+      "folke/trouble.nvim",
+      cmd = "TroubleToggle",
+    },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        setup = function ()
+            require("user.indent_blankline").setup()
+        end,
+        event = "BufRead"
+    },
+    { "norcalli/nvim-colorizer.lua" },
+    { "phaazon/hop.nvim" },
+    { "ybian/smartim" }
 }
 ```
+</details>
 
 ## `.config` 
 Some application configs are situated in this directory.
@@ -106,6 +123,6 @@ Files will be removed soon:
 - hyper related files
 
 ## TODOs
+- [ ] Tutorial writing: my setup of terminal workspace
 - [ ] Auto script for installing softwares through Homebrew
 - [ ] Auto script for Installing fonts
-- [ ] Refine document, for each utility
