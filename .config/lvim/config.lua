@@ -14,7 +14,9 @@ lvim.colorscheme = "zephyr"
 lvim.transparent_window = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-
+vim.opt.relativenumber = true
+-- cursor movement
+lvim.line_wrap_cursor_movement = false
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
