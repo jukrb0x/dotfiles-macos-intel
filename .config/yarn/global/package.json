@@ -2,7 +2,8 @@
   "dependencies": {
     "@quasar/cli": "^1.2.1",
     "@vue/cli": "^4.5.13",
-    "create-nuxt-app": "^3.4.0",
+    "create-next-app": "^12.0.3",
+    "create-nuxt-app": "^3.7.1",
     "create-react-app": "^4.0.3",
     "create-slidev": "^0.27.9",
     "create-vite": "^2.6.2",

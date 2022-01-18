@@ -1,5 +1,6 @@
 " show number of lines
 set number
+set relativenumber
 
 set ruler
 
