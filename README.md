@@ -73,8 +73,10 @@ I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli
 
 
 <details>
-<summary>Plugins: (see `.config/lvim/lv-config.lua` )</summary>
-
+<summary>Plugins</summary>
+    
+> see details in `.config/lvim/lv-config.lua`
+    
 ```lua
 -- Additional Plugins
 lvim.plugins = {
