@@ -1,5 +1,6 @@
 --[[
 lvim is the global options object
+
 Linters should be
 filled in as strings with either
 a global executable or a path to
@@ -17,12 +18,13 @@ vim.opt.shiftwidth = 4
 vim.opt.relativenumber = true
 -- cursor movement
 lvim.line_wrap_cursor_movement = false
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- unmap a default keymapping
--- lvim.keys.normal_mode["<C-Up>"] = ""
+-- lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
 -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
@@ -59,8 +61,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = true
+lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.size = 10
 lvim.builtin.terminal.direction = "horizontal"
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
@@ -81,7 +83,7 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.indent = { enable = true, disable = { "yaml", "python" } }
+lvim.builtin.treesitter.highlight.enabled = true
 
 -- generic LSP settings
 
@@ -96,8 +98,8 @@ lvim.builtin.treesitter.indent = { enable = true, disable = { "yaml", "python" }
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pylsp", opts)
 
--- you can set a custom on_attach function that will be used for all the language servers
--- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
+-- -- you can set a custom on_attach function that will be used for all the language servers
+-- -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
 -- lvim.lsp.on_attach_callback = function(client, bufnr)
 --   local function buf_set_option(...)
 --     vim.api.nvim_buf_set_option(bufnr, ...)
@@ -105,28 +107,18 @@ lvim.builtin.treesitter.indent = { enable = true, disable = { "yaml", "python" }
 --   --Enable completion triggered by <c-x><c-o>
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
--- you can overwrite the null_ls setup table (useful for setting the root_dir function)
--- lvim.lsp.null_ls.setup = {
---   root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
--- }
--- or if you need something more advanced
--- lvim.lsp.null_ls.setup.root_dir = function(fname)
---   if vim.bo.filetype == "javascript" then
---     return require("lspconfig/util").root_pattern("Makefile", ".git", "node_modules")(fname)
---       or require("lspconfig/util").path.dirname(fname)
---   elseif vim.bo.filetype == "php" then
---     return require("lspconfig/util").root_pattern("Makefile", ".git", "composer.json")(fname) or vim.fn.getcwd()
---   else
---     return require("lspconfig/util").root_pattern("Makefile", ".git")(fname) or require("lspconfig/util").path.dirname(fname)
---   end
--- end
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 -- local formatters = require "lvim.lsp.null-ls.formatters"
 -- formatters.setup {
---   { exe = "black" },
+--   { command = "black", filetypes = { "python" } },
+--   { command = "isort", filetypes = { "python" } },
 --   {
---     exe = "prettier",
+--     -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+--     command = "prettier",
+--     ---@usage arguments to pass to the formatter
+--     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+--     extra_args = { "--print-with", "100" },
 --     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
 --     filetypes = { "typescript", "typescriptreact" },
 --   },
@@ -135,15 +127,21 @@ lvim.builtin.treesitter.indent = { enable = true, disable = { "yaml", "python" }
 -- -- set additional linters
 -- local linters = require "lvim.lsp.null-ls.linters"
 -- linters.setup {
---   { exe = "black" },
+--   { command = "flake8", filetypes = { "python" } },
 --   {
---     exe = "eslint_d",
+--     -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+--     command = "shellcheck",
+--     ---@usage arguments to pass to the formatter
+--     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+--     extra_args = { "--severity", "warning" },
+--   },
+--   {
+--     command = "codespell",
 --     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
---     filetypes = { "javascript", "javascriptreact" },
+--     filetypes = { "javascript", "python" },
 --   },
 -- }
 
-lvim.lsp.override = { "java" }
 -- Additional Plugins
 lvim.plugins = {
     -- GitHub
@@ -154,7 +152,6 @@ lvim.plugins = {
     { "NTBBloodbath/doom-one.nvim" },
     { "abzcoding/zephyr-nvim" },
     -- Plugins
-    { "mfussenegger/nvim-jdtls", ft = "java" },
     { "iamcco/markdown-preview.nvim" },
     { "Iron-E/nvim-libmodal" },
     { "Iron-E/nvim-typora" },
@@ -163,13 +160,6 @@ lvim.plugins = {
     {
       "folke/trouble.nvim",
       cmd = "TroubleToggle",
-    },
-    {
-        "lukas-reineke/indent-blankline.nvim",
-        setup = function ()
-            require("user.indent_blankline").setup()
-        end,
-        event = "BufRead"
     },
     { "norcalli/nvim-colorizer.lua" },
     { "ybian/smartim" }
