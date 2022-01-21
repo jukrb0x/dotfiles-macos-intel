@@ -74,17 +74,12 @@ I use the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for
 
 
 ## `.config` 
-Some application configs are situated in this directory.
+Some application configs are populated in this directory.
 
-My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in home folder to its original.
+My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in `$HOME` folder to its original.
 
-I (*currently*) stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`. However, it's a bit annoying to add files outside `.config/` one by one since `$HOME` is not a real git directory.
+I stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`. However, it's a bit annoying to add files outside `.config/` one by one since `$HOME` is not a real git directory.
 
-## Deprecated files
-Some applications that I do not use for a while, the dotfiles of them are kept as backup, such files like `.hyper.js`.
-
-Files will be removed soon:
-- hyper related files
 
 ## TODOs
 - [ ] Tutorial writing: my setup of terminal workspace
