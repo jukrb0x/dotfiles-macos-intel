@@ -1,1 +1,1 @@
-source "$HOME/.cargo/env"
+/Users/jukrb0x/.config/.zshenv

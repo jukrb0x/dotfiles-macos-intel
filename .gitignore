@@ -1,4 +1,5 @@
 # This file is configured for yadm
+# could be deprecated in the future
 
 # os
 .DS_Store
@@ -7,29 +8,8 @@
 node_modules/
 
 # log
-.config/bpytop/error.log
 yarn-error.log
 
 # lockfiles
 yarn.lock
 package-lock.json
-
-# configstore
-.config/configstore/
-
-# github cli
-.config/gh/
-
-# no need to submit
-.config/.mono/
-.config/Microsoft\VisualStudio Services/
-.config/NuGet/
-.config/clash/
-.config/stetic/
-.config/wireshark/
-.shuttle.json
-.config/Unreal\ Engine/
-
-# github copilot
-.config/github-copilot/
-

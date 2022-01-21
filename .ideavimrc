@@ -1,6 +1,1 @@
-set surround
-set relativenumber
-set number
-set clipboard+=unnamed
-set hlsearch
-set smartcase
+/Users/jukrb0x/.config/.ideavimrc

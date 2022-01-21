@@ -1,1 +1,1 @@
-.config/.vimrc
+/Users/jukrb0x/.config/.vimrc

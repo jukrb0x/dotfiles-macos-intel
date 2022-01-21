@@ -3,3 +3,26 @@
 
 # node
 node_modules/
+
+# log
+bpytop/error.log
+
+# configstore
+configstore/
+
+# github cli
+gh/
+
+# no need to submit
+.mono/
+Microsoft\VisualStudio Services/
+NuGet/
+clash/
+stetic/
+wireshark/
+.shuttle.json
+Unreal\ Engine/
+
+# github copilot
+github-copilot/
+
