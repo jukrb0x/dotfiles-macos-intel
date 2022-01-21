@@ -8,12 +8,9 @@ Principles:
 
     > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
 - Exclude any secret file such as private keys and personal information.
-- Exclude unnecessary files (such as cache)
-- Exclude Git repository
-- Git submodule is considered, though I do not use any submodule currently
-
-    > Use submodule soon!
-- Softlink-free, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
+- Exclude unnecessary and temporary files such as cache
+- Exclude Git repository or Use git submodule
+- Exclude softlinks, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 ```
 ❯ neofetch
@@ -40,16 +37,16 @@ Principles:
 ## Fonts
 I am comfortable with these fonts.
 
-For iTerm2:
+**iTerm2**
 - FiraCode Medium 17
 - FiraMono Nerd Font Regular 17 (non-ascii)
 
 More details at `.config/iterm2Profile.json`
 
-For JetBrains IDEs:
+**JetBrains IDEs**
 - JetBrains Mono ([Website](https://www.jetbrains.com/lp/mono/))
 
-For VSCode:
+**VSCode**
 - `"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace"`
 - `"terminal.integrated.fontFamily": "JetBrains Mono"`
 
@@ -65,53 +62,16 @@ For VSCode:
 ### Tmux
 Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
 
-Plugins:
+**Plugins**
 - [xamut/tmux-network-bandwidth](https://github.com/xamut/tmux-network-bandwidth)
 
 ### NeoVim
-I am currently using the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.  Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
+I use the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.  Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
 
-
-<details>
-<summary>Plugins</summary>
-    
+**Plugins**
+ 
 > see details in `.config/lvim/lv-config.lua`
-    
-```lua
--- Additional Plugins
-lvim.plugins = {
-    -- GitHub
-    { "github/copilot.vim"},
-    -- Themes
-    { "folke/tokyonight.nvim" },
-    { "Pocco81/Catppuccino.nvim" },
-    { "NTBBloodbath/doom-one.nvim" },
-    { "abzcoding/zephyr-nvim" },
-    -- Plugins
-    { "mfussenegger/nvim-jdtls", ft = "java" },
-    { "iamcco/markdown-preview.nvim" },
-    { "Iron-E/nvim-libmodal" },
-    { "Iron-E/nvim-typora" },
-    { "plasticboy/vim-markdown" },
-    { "wakatime/vim-wakatime" },
-    {
-      "folke/trouble.nvim",
-      cmd = "TroubleToggle",
-    },
-    {
-        "lukas-reineke/indent-blankline.nvim",
-        setup = function ()
-            require("user.indent_blankline").setup()
-        end,
-        event = "BufRead"
-    },
-    { "norcalli/nvim-colorizer.lua" },
-    { "phaazon/hop.nvim" },
-    { "ybian/smartim" }
-}
-```
 
-</details>
 
 ## `.config` 
 Some application configs are situated in this directory.
