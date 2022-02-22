@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
@@ -26,7 +33,7 @@ export ZSH="/Users/jukrb0x/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Hide Username and Hostname
 DEFAULT_USER=`id -un`
@@ -162,13 +169,6 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 # <<< pyenv init <<<
 
-# >>> starship init >>>
-# !! starship prompt will overpower oh-my-zsh theme
-eval "$(starship init zsh)"
-# logging - https://starship.rs/config/#logging
-export STARSHIP_CACHE=~/.starship/cache
-# <<< starship init <<<
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('/Users/jukrb0x/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -227,3 +227,6 @@ __git_files () {
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

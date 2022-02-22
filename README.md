@@ -1,4 +1,7 @@
 # dotfiles (WIP)
+
+> :warning: This document need to be rewritten.
+
 Workspace setup, My personal dotfiles, powered by [`yadm`](https://yadm.io/)
 
 Dotfiles are very personal things, make sure you read the document before actually using them. Personally I use this repository to sync my dotfiles, however this repository aims to assist you with creating your own Dotfiles. I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
@@ -53,7 +56,7 @@ More details at `.config/iterm2Profile.json`
 ## Terminal Arsenal
 - iTerm2
 - Zsh (oh-my-zsh)
-- StarShip prompt
+- ~~StarShip prompt~~ _deprecated_ 
 - Tmux
 - NeoVim (LunarVim)
 - Pyenv (manage python versions on machine)
