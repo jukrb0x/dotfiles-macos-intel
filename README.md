@@ -85,3 +85,4 @@ I stick to this way for some files such as `.zshrc`, even it is unnecessary with
 - [ ] Tutorial writing: my setup of terminal workspace
 - [ ] Auto script for installing softwares through Homebrew
 - [ ] Auto script for Installing fonts
+- [ ] replace starship with zsh-power10k-theme
