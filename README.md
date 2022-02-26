@@ -1,19 +1,11 @@
-# dotfiles (WIP)
+# dotfiles for macOS (WIP)
 
-> :warning: This document need to be rewritten.
+> :warning: working in progress, don't use them directly
 
-Workspace setup, My personal dotfiles, powered by [`yadm`](https://yadm.io/)
+My macOS workspace setups within dotfiles.
 
 Dotfiles are very personal things, make sure you read the document before actually using them. Personally I use this repository to sync my dotfiles, however this repository aims to assist you with creating your own Dotfiles. I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
 
-Principles:
-- Try not to add system-related files into this project, keep pure to application itself.
-
-    > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
-- Exclude any secret file such as private keys and personal information.
-- Exclude unnecessary and temporary files such as cache
-- Exclude Git repository or Use git submodule
-- Exclude softlinks, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 ```
 ❯ neofetch
@@ -82,6 +74,15 @@ Some application configs are populated in this directory.
 My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in `$HOME` folder to its original.
 
 I stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`. However, it's a bit annoying to add files outside `.config/` one by one since `$HOME` is not a real git directory.
+
+# Tips
+- Try not to add system-related files into this project, keep pure to application itself.
+
+    > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
+- Exclude any secret file such as private keys and personal information.
+- Exclude unnecessary and temporary files such as cache
+- Exclude Git repository or Use git submodule
+- Exclude softlinks, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
 
 
 ## TODOs
