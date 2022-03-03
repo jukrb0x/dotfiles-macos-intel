@@ -1,7 +1,5 @@
 # Dotfiles for *macOS*
 
-> :warning: working in progress, don't use them directly
-
 > Sister repository for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
 
 My macOS workspace setups within dotfiles.
