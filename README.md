@@ -60,8 +60,7 @@ I am comfortable with these fonts.
 
 
 ## `.config` 
-This is a good practice 
-Some application configs are populated in this directory.
+This is a good practice to put some dotfiles under a special directory and symlink them to `$HOME`.
 
 
 # Tips
