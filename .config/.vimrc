@@ -50,3 +50,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
+
+" sync with system clipboard
+set clipboard+=unnamed

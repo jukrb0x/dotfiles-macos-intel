@@ -13,8 +13,8 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "zephyr"
 lvim.transparent_window = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+-- vim.opt.tabstop = 4
+-- vim.opt.shiftwidth = 4
 vim.opt.relativenumber = true
 -- cursor movement
 lvim.line_wrap_cursor_movement = false

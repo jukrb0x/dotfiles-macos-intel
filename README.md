@@ -1,11 +1,16 @@
-# dotfiles for macOS (WIP)
+# Dotfiles for *macOS*
 
 > :warning: working in progress, don't use them directly
 
+> Sister repository for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
+
 My macOS workspace setups within dotfiles.
 
-Dotfiles are very personal things, make sure you read the document before actually using them. Personally I use this repository to sync my dotfiles, however this repository aims to assist you with creating your own Dotfiles. I would try to document all magics that I've been using. The dotfiles are managed by `yadm`, which is git-like tool to manage and sync dotfiles. However, you can choose other dotfiles manager such as [`mackup`](https://github.com/lra/mackup). 
+## What is dotfiles?
 
+Before you do anything with this repository, I suggest you take a look on this website about [Dotfiles](https://dotfiles.github.io/)
+
+I use `yadm` to manage all my dotfiles, you may find other tools to manage and symlink them.
 
 ```
 ❯ neofetch
@@ -33,60 +38,35 @@ Dotfiles are very personal things, make sure you read the document before actual
 I am comfortable with these fonts.
 
 **iTerm2**
-- FiraCode Medium 17
-- FiraMono Nerd Font Regular 17 (non-ascii)
+- MesloGS NF (p10k patch)
+- FiraCode 
+- FiraMono Nerd Font
 
-More details at `.config/iterm2Profile.json`
+> More details at `.config/iterm2Profile.json`
 
 **JetBrains IDEs**
 - JetBrains Mono ([Website](https://www.jetbrains.com/lp/mono/))
 
 **VSCode**
-- `"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace"`
-- `"terminal.integrated.fontFamily": "JetBrains Mono"`
+```json
+"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace"
+"terminal.integrated.fontFamily": "JetBrains Mono"
+```
 
-## Terminal Arsenal
+## Terminal Setup
 - iTerm2
 - Zsh (oh-my-zsh)
-- ~~StarShip prompt~~ _deprecated_ 
+    - powerlevel10k theme with useful plugins
 - Tmux
 - NeoVim (LunarVim)
-- Pyenv (manage python versions on machine)
-- Pipenv (manage python environment for projects)
-
-### Tmux
-Glad to use the versatile config [oh-my-tmux](https://github.com/gpakosz/.tmux).
-
-**Plugins**
-- [xamut/tmux-network-bandwidth](https://github.com/xamut/tmux-network-bandwidth)
-
-### NeoVim
-I use the preset [LunarVim](https://github.com/ChristianChiarulli/LunarVim/) for Nvim.  Learning Vim? See [this repo](https://github.com/mhinz/vim-galore).
-
-**Plugins**
- 
-> see details in `.config/lvim/lv-config.lua`
 
 
 ## `.config` 
+This is a good practice 
 Some application configs are populated in this directory.
 
-My old-school way to manage dotfiles, put dotfiles inside `.config/` and then create softlink in `$HOME` folder to its original.
-
-I stick to this way for some files such as `.zshrc`, even it is unnecessary with `yadm`. However, it's a bit annoying to add files outside `.config/` one by one since `$HOME` is not a real git directory.
 
 # Tips
-- Try not to add system-related files into this project, keep pure to application itself.
+> todo
 
-    > There are occasions when this cannot be avoided, for example, absolute pathname includes username.
-- Exclude any secret file such as private keys and personal information.
-- Exclude unnecessary and temporary files such as cache
-- Exclude Git repository or Use git submodule
-- Exclude softlinks, `yadm` will manage dotfiles under `$HOME` directory, softlink is deprecated.
-
-
-## TODOs
-- [ ] Tutorial writing: my setup of terminal workspace
-- [ ] Auto script for installing softwares through Homebrew
-- [ ] Auto script for Installing fonts
-- [ ] replace starship with zsh-power10k-theme
+- [ ] Auto script for installing fonts
