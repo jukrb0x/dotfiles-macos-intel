@@ -19,6 +19,12 @@
 	forceSignAnnotated = true
 [core]
 	editor = lvim
+	quotepath = false
+	longpaths = true
+	autocrlf = input
+	trustctime = false
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.attributes_global
 [init]
 	defaultBranch = main
 
@@ -30,3 +36,21 @@
     cmd = '/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 [pull]
 	rebase = false
+[http]
+	postBuffer = 655360000
+[diff "text"]
+	textconv = cat
+[mergetool]
+	keepBackup = false
+	writeToTemp = true
+[mergetool "*.*_unityyamlmerge"]
+	cmd = '/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p $BASE $REMOTE $LOCAL $MERGED
+	trustexitcode = false
+[lfs]
+	concurrenttransfers = 32
+	fetchrecentrefsdays = 0
+	pruneoffsetdays = 0
+[rebase]
+	backend = apply
+[protocol]
+	version = 1
