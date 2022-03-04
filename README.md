@@ -54,12 +54,14 @@ I am comfortable with these fonts.
 ## Terminal Setup
 - iTerm2
 - Zsh (oh-my-zsh)
-    - powerlevel10k theme with useful plugins
+    - `powerlevel10k` theme with useful plugins
 - Tmux
 - NeoVim (LunarVim)
 
-
-# Tips
+## Tips
 > todo
 - A good practice: put dotfiles under a special directory and symlink them to `$HOME`.
+
+## TODO
 - [ ] Auto script for installing fonts
+- [ ] 
