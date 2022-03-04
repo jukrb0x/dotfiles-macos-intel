@@ -2,7 +2,7 @@
 
 > Sister repository for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
 
-My macOS workspace setups within dotfiles.
+My macOS workspace setups (dotfiles).
 
 ## What is dotfiles?
 
@@ -59,11 +59,7 @@ I am comfortable with these fonts.
 - NeoVim (LunarVim)
 
 
-## `.config` 
-This is a good practice to put some dotfiles under a special directory and symlink them to `$HOME`.
-
-
 # Tips
 > todo
-
+- A good practice: put dotfiles under a special directory and symlink them to `$HOME`.
 - [ ] Auto script for installing fonts
