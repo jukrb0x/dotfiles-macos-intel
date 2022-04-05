@@ -9,6 +9,10 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
+# homebrew ruby gem support
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH=/usr/local/lib/ruby/gems/3.1.0/bin:$PATH
+
 # >>> Homebrew shell completions >>>
 # !! Homebrew shell completions must be done before call oh-my-zsh
 if type brew &>/dev/null; then
@@ -17,7 +21,7 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
-# <<< Homebrew shell completions end <<< 
+# <<< Homebrew shell completions <<< 
 
 # >>> homebrew/command-not-found handler init >>>
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
@@ -159,6 +163,9 @@ alias ls='colorls'
 # <<< alias to athityakumar/colorls <<<
 
 # ---- Applications ----
+
+# colorls auto completion
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # >>> pyenv init >>>
 # !! pyenv should be initialized in front of most applications
