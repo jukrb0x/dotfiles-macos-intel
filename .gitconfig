@@ -7,7 +7,7 @@
 	name = jukrb0x
 	email = 15688641+jukrb0x@users.noreply.github.com
 	signingKey = 9E603D2A7C8FBDD4
-[https]
+[https "https://github.com"]
 	proxy = socks5://127.0.0.1:8235
 [http "https://github.com"]
 	proxy = socks5://127.0.0.1:8235
@@ -25,6 +25,8 @@
 	trustctime = false
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.attributes_global
+	ignorecase = true
+	filemode = true
 [init]
 	defaultBranch = main
 
