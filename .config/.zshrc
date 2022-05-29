@@ -14,7 +14,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH=/usr/local/lib/ruby/gems/3.1.0/bin:$PATH
 
 # flutter sdk
-export PATH="$PATH:/Users/jukrb0x/flutter/bin"
+export PATH="$PATH:${HOME}/flutter/bin"
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
@@ -36,7 +36,7 @@ fi
 # <<< homebrew/command-not-found handler init <<<
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jukrb0x/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -156,7 +156,7 @@ alias nvim=lvim
 alias proxy='export all_proxy=socks5://127.0.0.1:8235'
 alias unproxy='unset all_proxy'
 alias nb='jupyter-notebook'
-alias caferacer='/Users/jukrb0x/caferacer_ip_refresh.sh'
+alias caferacer='${HOME}/caferacer_ip_refresh.sh'
 alias ra='ranger'
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
 alias mongodb-start='brew services start mongodb-community@4.4'
@@ -183,14 +183,14 @@ eval "$(pyenv init -)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/jukrb0x/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# __conda_setup="$('${HOME}/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 # if [ $? -eq 0 ]; then
 #     eval "$__conda_setup"
 # else
-#     if [ -f "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/Users/jukrb0x/opt/anaconda3/etc/profile.d/conda.sh"
+#     if [ -f "${HOME}/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "${HOME}/opt/anaconda3/etc/profile.d/conda.sh"
 #     else
-#         export PATH="/Users/jukrb0x/opt/anaconda3/bin:$PATH"
+#         export PATH="${HOME}/opt/anaconda3/bin:$PATH"
 #     fi
 # fi
 # unset __conda_setup
@@ -209,13 +209,13 @@ export HOMEBREW_BOTTLE_DOMAIN=""
 # --> jdk 1.8 (system)
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home
 # --> jdk11 (corretto, downloaded with intellij)
-# export JAVA_HOME=/Users/jukrb0x/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home
+# export JAVA_HOME=${HOME}/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home
 # --> jdk 11 (temurin downloaded with intellij)
-# export JAVA_HOME=/Users/jukrb0x/Library/Java/JavaVirtualMachines/temurin-11.0.12/Contents/Home
+# export JAVA_HOME=${HOME}/Library/Java/JavaVirtualMachines/temurin-11.0.12/Contents/Home
 
 # Android Debug Bridge
-export ANDROID_HOME=/Users/jukrb0x/Library/Android/sdk
-export ANDROID_SDK_ROOT=/Users/jukrb0x/Library/Android/sdk
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools; PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
