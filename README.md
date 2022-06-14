@@ -1,8 +1,8 @@
-# Dotfiles for *macOS*
+# Dotfiles for *macOS (x86_64)*
 
 > Sister repository for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
 
-My macOS workspace setups (dotfiles).
+My macOS workspace setups (dotfiles), managed with `yadm`, the files are chaos, copy and paste could wreak havoc.
 
 ## What is dotfiles?
 
