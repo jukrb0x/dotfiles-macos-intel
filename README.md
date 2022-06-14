@@ -4,6 +4,8 @@
 
 My macOS workspace setups (dotfiles), managed with `yadm`, the files are chaos, copy and paste could wreak havoc.
 
+check [this dotfies](https://github.com/jukrb0x/dotfiles) for Apple Silicon based macOS.
+
 ## What is dotfiles?
 
 Before you do anything with this repository, I suggest you take a look on this website about [Dotfiles](https://dotfiles.github.io/)
@@ -63,5 +65,4 @@ I am comfortable with these fonts.
 - A good practice: put dotfiles under a special directory and symlink them to `$HOME`.
 
 ## TODO
-- [ ] Auto script for installing fonts
-- [ ] 
+- [ ] Enjoy your life.
