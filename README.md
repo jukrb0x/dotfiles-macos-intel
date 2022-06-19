@@ -1,16 +1,13 @@
 # Dotfiles for *macOS (x86_64)*
 
-> Sister repository for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
+> This repository is no longer maintained.
 
 My macOS workspace setups (dotfiles), managed with `yadm`, the files are chaos, copy and paste could wreak havoc.
 
-check [this dotfies](https://github.com/jukrb0x/dotfiles) for Apple Silicon based macOS.
+This repository follows the practice that symlink dotfiles from `$HOME/.config` to `$HOME`. I **do not** suggest this way to manage dotfiles for now, please check the new ARM-based macOS dotfiles repository, managed with `chezmoi`.
 
-## What is dotfiles?
-
-Before you do anything with this repository, I suggest you take a look on this website about [Dotfiles](https://dotfiles.github.io/)
-
-I use `yadm` to manage all my dotfiles, you may find other tools to manage and symlink them.
+- Dotfiles for *ARM-based macOS*: [dotfiles-macos-arm](https://github.com/jukrb0x/dotfiles)
+- Dotfiles for *WSL Ubuntu 20*: [dotfiles-wsl-ubuntu](https://github.com/jukrb0x/dotfiles-wsl-ubuntu)
 
 ```
 ❯ neofetch
@@ -37,32 +34,25 @@ I use `yadm` to manage all my dotfiles, you may find other tools to manage and s
 ## Fonts
 I am comfortable with these fonts.
 
-**iTerm2**
+**iTerm2** `.config/iterm2Profile.json`
 - MesloGS NF (p10k patch)
 - FiraCode 
 - FiraMono Nerd Font
-
-> More details at `.config/iterm2Profile.json`
+ 
 
 **JetBrains IDEs**
 - JetBrains Mono ([Website](https://www.jetbrains.com/lp/mono/))
 
 **VSCode**
 ```json
-"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace"
+"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
 "terminal.integrated.fontFamily": "JetBrains Mono"
 ```
 
-## Terminal Setup
+## Terminal
 - iTerm2
 - Zsh (oh-my-zsh)
     - `powerlevel10k` theme with useful plugins
 - Tmux
 - NeoVim (LunarVim)
 
-## Tips
-> todo
-- A good practice: put dotfiles under a special directory and symlink them to `$HOME`.
-
-## TODO
-- [ ] Enjoy your life.
